@@ -42,7 +42,7 @@
     "public": true
   },
   "Contact": {
-    "dataSource": "db",
+    "dataSource": "sql",
     "public": true
   },
   "Product": {
