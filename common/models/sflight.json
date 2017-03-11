@@ -1,0 +1,49 @@
+{ "name": "Sflight",
+	"plural": "Sflights",
+	"base": "PersistedModel",
+	"idInjection": false,
+	"options": {
+	   "idInjection": false
+  },
+	"properties": {
+		"ID": {
+			"type": "Number",
+			"required": true
+		},
+		"MANDT": {
+			"type": "Number"
+		},
+		"CARRID": {
+			"type": "String",
+			"length": 2
+		},
+		"CONNID": {
+			"type": "Number"
+		},
+		"FLDATE": {
+			"type": "Date"
+		},
+		"PRICE": {
+			"type": "Number"
+		},
+		"CURRENCY": {
+			"type": "String",
+			"length": 3
+		},
+		"PLANETYPE": {
+			"type": "String",
+			"length": 16
+		},
+		"SEATSMAX": {"type": "Number"},
+		"SEATSOCC": {"type": "Number"},
+		"PAYMENTSUM": {"type": "Number"},
+		"SEATSMAX_B": {"type": "Number"},
+		"SEATSOCC_B": {"type": "Number"},
+		"SEATSMAX_F": {"type": "Number"},
+		"SEATSOCC_F": {"type": "Number"}
+ },
+	"validations": [],
+	"relations": {},
+	"acls": [],
+	"methods": {}
+}

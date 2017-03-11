@@ -2,7 +2,57 @@
 		controllerName="flight_app.main" xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Flüge">
 		<content>
-			<Table id="fligtsTable" items="{/Contacts/d/results}" growing="true" growingScrollToLOad="true">
+
+			<Table id="fligtsTable" items="{/Sflights/d/results}" growing="true" growingScrollToLOad="true">
+				<columns>
+					<Column>
+						<Text text="CARRID" />
+					</Column>
+					<Column>
+						<Text text="CONNID" />
+					</Column>
+					<Column>
+						<Text text="FLDATE" />
+					</Column>
+					<Column>
+						<Text text="PRICE" />
+					</Column>
+					<Column>
+						<Text text="Currency" />
+					</Column>
+					<Column>
+						<Text text="Planer Type" />
+					</Column>
+					<Column>
+						<Text text="Max Seats" />
+					</Column>
+					<Column>
+						<Text text="Booked Seats" />
+					</Column>
+					<Column>
+						<Text text="Payment Sum" />
+					</Column>
+				</columns>
+
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Text text="{CARRID}" />
+							<Text text="{CONNID}" />
+							<Text text="{FLDATE}" />
+							<Text text="{PRICE}" />
+							<Text text="{CURRENCY}" />
+							<Text text="{PLANETYPE}" />
+							<Text text="{SEATSMAX}" />
+							<Text text="{SEATSOCC}" />
+							<Text text="{PAYMENTSUM}" />
+						</cells>
+					</ColumnListItem>
+
+				</items>
+			</Table>
+
+			<Table id="contactsTable" items="{/Contacts/d/results}" growing="true" growingScrollToLOad="true">
 				<columns>
 					<Column>
 						<Text text="ID" />

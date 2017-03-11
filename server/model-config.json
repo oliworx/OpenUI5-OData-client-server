@@ -45,7 +45,11 @@
     "dataSource": "sql",
     "public": true
   },
-  "Product": {
+	"Sflight": {
+		"dataSource": "sql",
+		"public": true
+	},
+	"Product": {
     "dataSource": "db",
     "public": true
   },
