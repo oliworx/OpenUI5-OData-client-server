@@ -18,3 +18,4 @@ node_modules
 npm-debug.log
 .jshint*
 .sqlite3-journal
+client/js/openui5-runtime
