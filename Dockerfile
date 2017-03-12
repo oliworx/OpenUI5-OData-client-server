@@ -1,14 +1,10 @@
-# DOCKER-VERSION 1.10
-
 #########################################
 ###
-###	This Dockerfile can be used to build an image that encloses the node_odata_server_example application
+###	This Dockerfile can be used to build an image that encloses the application
 ###
 #########################################
 
-#FROM registry.eu-gb.bluemix.net/ibmnode:4
-#FROM node:4-onbuild
-FROM node:4
+FROM node:6
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app

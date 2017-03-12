@@ -33,44 +33,9 @@
     "dataSource": "db",
     "public": false
   },
-  "Person": {
-    "dataSource": "db",
-    "public": true
-  },
-  "Customer": {
-    "dataSource": "db",
-    "public": true
-  },
-  "Contact": {
-    "dataSource": "sql",
-    "public": true
-  },
+
 	"Sflight": {
 		"dataSource": "sql",
 		"public": true
-	},
-	"Product": {
-    "dataSource": "db",
-    "public": true
-  },
-  "ProductDetail": {
-    "dataSource": "db",
-    "public": true
-  },
-  "Category": {
-    "dataSource": "db",
-    "public": true
-  },
-  "Attendee": {
-    "dataSource": "db",
-    "public": true
-  },
-  "NpmjsDownload": {
-    "dataSource": "db",
-    "public": true
-  },
-  "BusinessTrip": {
-    "dataSource": "db",
-    "public": true
-  }
+	}
 }
