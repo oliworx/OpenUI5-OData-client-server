@@ -6,7 +6,7 @@
 			<Table id="fligtsTable" items="{/Sflights/d/results}" growing="true" growingScrollToLOad="true">
 				<columns>
 					<Column>
-						<Text text="CARRID" />
+						<Text text="Airline ID" />
 					</Column>
 					<Column>
 						<Text text="CONNID" />
@@ -21,7 +21,7 @@
 						<Text text="Currency" />
 					</Column>
 					<Column>
-						<Text text="Planer Type" />
+						<Text text="Plane Type" />
 					</Column>
 					<Column>
 						<Text text="Max Seats" />
@@ -52,37 +52,6 @@
 				</items>
 			</Table>
 
-			<Table id="contactsTable" items="{/Contacts/d/results}" growing="true" growingScrollToLOad="true">
-				<columns>
-					<Column>
-						<Text text="ID" />
-					</Column>
-					<Column>
-						<Text text="Vorname" />
-					</Column>
-					<Column>
-						<Text text="Nachname" />
-					</Column>
-					<Column>
-						<Text text="Email" />
-					</Column>
-					<Column>
-						<Text text="Mobil" />
-					</Column>
-				</columns>
-
-				<items>
-					<ColumnListItem>
-						<cells>
-							<Text text="{id}" />
-							<Text text="{firstname}" />
-							<Text text="{lastname}" />
-							<Text text="{email}" />
-							<Text text="{mobile}" />
-						</cells>
-					</ColumnListItem>
-				</items>
-			</Table>
 		</content>
 		<footer>
 			<Bar>
