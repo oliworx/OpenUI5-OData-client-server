@@ -1,0 +1,27 @@
+{
+  "name": "OpenUI5-OData-client-server",
+  "description": "NodeJS app with an OData Server and a OData OpenUI5 client",
+  "main": "server/server.js",
+  "authors": [
+    "Oliver Kurmis <oliver@kurmis.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "OData",
+    "OPenUI5",
+    "NodeJS"
+  ],
+  "homepage": "https://github.com/oliworx/OpenUI5-OData-client-server",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/js/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "openui5-runtime": "*"
+  }
+}
