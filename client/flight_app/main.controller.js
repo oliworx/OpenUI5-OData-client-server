@@ -6,7 +6,7 @@ sap.ui.controller("flight_app.main", {
 * @memberOf flight_app.main
 */
 	onInit: function() {
-		serviceUrl = "http://localhost:3000/odata/";
+		var serviceUrl = "/odata/";
 		var oModel = new sap.ui.model.odata.v2.ODataModel(serviceUrl);
 		oModel.setUseBatch(false);
 		this.getView().setModel(oModel);
