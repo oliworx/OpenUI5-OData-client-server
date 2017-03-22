@@ -19,10 +19,11 @@
     "serve-favicon": "^2.4.1",
     "sqlite3": "^3.1.8"
   },
-  "repository": {
-    "type": "",
-    "url": ""
-  },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/oliworx/OpenUI5-OData-client-server.git"
+	},
+	"license": "MIT",
   "description": "OData-server with OpenUI5-OData-client",
   "homepage": "https://github.com/oliworx/OpenUI5-OData-client-server"
 }
