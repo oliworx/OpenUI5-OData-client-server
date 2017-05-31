@@ -5,8 +5,7 @@ This is an simple example project for the [n-odata-server](https://github.com/ht
 utilizing [OpenUI5](http://openui5.org/) for the OData-client.
 
 After you cloned this repository
-run `npm install` to install the backend node modules and 
-`bower install` to install the OpenUI5 frontend files locally.
+run `npm install` to install the backend NodeJS modules.
 
 to start the application run
 
