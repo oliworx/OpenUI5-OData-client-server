@@ -4,28 +4,26 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node ./server/server.js",
-    "debug": "node-debug ./server/server.js",
-		"postinstall": "bower install"
+    "debug": "node-debug ./server/server.js"
   },
   "dependencies": {
-    "body-parser": "^1.17.1",
+    "body-parser": "^1.17.2",
     "compression": "^1.6.2",
-    "cors": "^2.8.1",
-    "loopback": "^2.22.0",
-    "loopback-boot": "^2.6.5",
+    "cors": "^2.8.3",
+    "loopback": "^2.38.3",
+    "loopback-boot": "^2.24.1",
     "loopback-connector-sqlite3": "^1.2.0",
     "loopback-context": "^1.0.0",
-    "loopback-datasource-juggler": "^2.39.0",
+    "loopback-datasource-juggler": "^2.54.2",
     "n-odata-server": "^0.4.1",
-    "serve-favicon": "^2.4.1",
-    "sqlite3": "^3.1.8",
-    "bower": "^1.6.0"
+    "serve-favicon": "^2.4.3",
+    "sqlite3": "^3.1.8"
   },
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/oliworx/OpenUI5-OData-client-server.git"
-	},
-	"license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oliworx/OpenUI5-OData-client-server.git"
+  },
+  "license": "MIT",
   "description": "OData-server with OpenUI5-OData-client",
   "homepage": "https://github.com/oliworx/OpenUI5-OData-client-server"
 }
