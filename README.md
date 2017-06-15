@@ -1,29 +1,49 @@
 
 # NodeJS OData server with OpenUI5 client
 
-This is an simple example project for the [n-odata-server](https://github.com/htammen/n-odata-server)
+This is an simple example project based on the [n-odata-server](https://github.com/htammen/n-odata-server)
 utilizing [OpenUI5](http://openui5.org/) for the OData-client.
 
-After you cloned this repository
-run `npm install` to install the backend NodeJS modules.
+## Requirements
+The OData-server requires Node.js v6.x or v8.x.
 
-to start the application run
+See https://nodejs.org/ (or https://nodejs.org/de/ ) for more information abou how to
+install Node.js on your platform.
 
+(if you switch the version of Node.js you have to delete `node_modules`
+and `package-lock.json` and install the node modules again with `npm install`)
+
+## Installation
+
+After you have cloned (or downloaded and extracted) this repository
+run `npm install` to install the backend Node.js modules.
+
+To start the application run one of these three commands, they are all doing the same
+
+    node server/server.js
     node .
+    npm start
 
-### Retrieve  Data
+Now open http://localhost:3000 in a Webbrowser and you should see the UI5-app.
+
+## Retrieve  Data
 The index page also provides some links you can use to retrieve the data via the odata server.
 
-To test the odata server we recommend to use a browser plugin e.g. Postman.
+To test the OData server we recommend to use a browser plugin e.g. Postman.
 
 This are a few sample OData-requests to retrieve data with HTTP-GET-method:
 
-* http://\<host\>:3000/odata/$metadata
-* http://\<host\>:3000/odata/Sflight
-* http://\<host\>:3000/odata/Sflight?$top=3
-* http://\<host\>:3000/odata/Sflight?$top=2&$skip=3
-* http://\<host\>:3000/odata/Sflight?$select=firstname,age
-* http://\<host\>:3000/odata/Sflight?$count
+* http://localhost:3000/odata/$metadata
+* http://localhost:3000/odata/Sflight
+* http://localhost:3000/odata/Sflight?$top=3
+* http://localhost:3000/odata/Sflight?$top=2&$skip=3
+* http://localhost:3000/odata/Sflight?$select=firstname,age
+* http://localhost:3000/odata/Sflight?$count
+
+## Demo
+See a running demo op this app at https://calm-river-87255.herokuapp.com 
+or https://ui5app.kurmis.com
+(the free heroku dyno might take some time to start, so please be patient)
 
 ## Authentication and Authorization
 The n-odata-server leverages the authentication and authorization mechanisms 
@@ -32,7 +52,7 @@ supplied by loopback.
 The n-odata-server has a [wiki page](https://github.com/htammen/n-odata-server/wiki/authorization) 
 to help getting started easily with this topic.
 
-## Docker
+## Using Docker to build an run the app
 It's also quite easy to run the application in a Docker container.
 This might be a good idea if you e.g. don't have a local node.js installation yet.
 
