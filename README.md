@@ -29,7 +29,8 @@ This are a few sample OData-requests to retrieve data with HTTP-GET-method:
 The n-odata-server leverages the authentication and authorization mechanisms 
 supplied by loopback. 
 
-There is a [wiki page](https://github.com/htammen/n-odata-server/wiki/authorization) to help you get started easily with this topic.
+The n-odata-server has a [wiki page](https://github.com/htammen/n-odata-server/wiki/authorization) 
+to help getting started easily with this topic.
 
 ## Docker
 It's also quite easy to run the application in a Docker container.
