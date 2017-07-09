@@ -46,12 +46,26 @@
 									style: 'short'
 									}
 							}" />
-							<Text text="{PRICE}" />
+							<Text text="{
+								path:'PRICE',
+								type:'sap.ui.model.type.Float',
+								formatOptions: {
+									maxFractionDigits: 2,
+									minFractionDigits: 2
+								}
+							}" />
 							<Text text="{CURRENCY}" />
 							<Text text="{PLANETYPE}" />
 							<Text text="{SEATSMAX}" />
 							<Text text="{SEATSOCC}" />
-							<Text text="{PAYMENTSUM}" />
+							<Text text="{
+								path:'PAYMENTSUM',
+								type:'sap.ui.model.type.Float',
+								formatOptions: {
+									maxFractionDigits: 2,
+									minFractionDigits: 2
+								}
+							}" />
 						</cells>
 					</ColumnListItem>
 
