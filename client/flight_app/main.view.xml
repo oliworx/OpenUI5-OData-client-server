@@ -39,7 +39,13 @@
 						<cells>
 							<Text text="{CARRID}" />
 							<Text text="{CONNID}" />
-							<Text text="{FLDATE}" />
+							<Text text="{
+								path: 'FLDATE',
+								type: 'sap.ui.model.type.DateTime',
+								formatOptions: {
+									style: 'short'
+									}
+							}" />
 							<Text text="{PRICE}" />
 							<Text text="{CURRENCY}" />
 							<Text text="{PLANETYPE}" />
