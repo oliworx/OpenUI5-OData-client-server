@@ -8,7 +8,7 @@
   "author": "Oliver Kurmis <oliver@kurmis.com> (https://www.kurmis.com/)",
   "main": "server/server.js",
   "engines": {
-    "node": ">=6.1"
+    "node": ">=6.11.1"
   },
   "scripts": {
     "start": "node ./server/server.js",
