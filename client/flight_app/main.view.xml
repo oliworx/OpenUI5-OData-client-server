@@ -1,21 +1,21 @@
 <core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
 		controllerName="flight_app.main" xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Flüge">
+	<Page title="Flights">
 		<content>
 
-			<Table id="fligtsTable" items="{/Sflights/d/results}" growing="true" growingScrollToLOad="true">
+			<Table id="flightsTable" items="{/Sflights/d/results}" growing="true" growingScrollToLOad="true">
 				<columns>
 					<Column>
-						<Text text="Airline ID" />
+						<Text text="Airline" />
 					</Column>
 					<Column>
-						<Text text="CONNID" />
+						<Text text="Connection" />
 					</Column>
 					<Column>
-						<Text text="FLDATE" />
+						<Text text="Date" />
 					</Column>
 					<Column>
-						<Text text="PRICE" />
+						<Text text="Price" />
 					</Column>
 					<Column>
 						<Text text="Currency" />
@@ -76,7 +76,7 @@
 		<footer>
 			<Bar>
 			  <contentLeft>
-			     <Button text="Neuen Datensatz anlegen" type="Accept" press="createPopup"/>
+			     <Button text="Add new flight" type="Accept" press="createPopup"/>
 			  </contentLeft>
 			</Bar>
 		</footer>
