@@ -1,7 +1,7 @@
 
 # NodeJS OData server with OpenUI5 client
 
-This is an simple example project based on the [n-odata-server](https://github.com/htammen/n-odata-server)
+This is an small example project based on the [n-odata-server](https://github.com/htammen/n-odata-server)
 utilizing [OpenUI5](http://openui5.org/) for the OData-client.
 
 ## Requirements
@@ -24,28 +24,29 @@ To start the application run one of these three commands, they are all doing the
     node .
     npm start
 
-Now open http://localhost:3000 in a Webbrowser and you should see the UI5-app.
+Now open http://localhost:3000 in a Webbrowser and you should see the OpenUI5-app.
 
 ## Retrieve  Data
-The index page also provides some links you can use to retrieve the data via the odata server.
+To test the OData server it is recommended to use a browser plugin e.g. Postman.
 
-To test the OData server we recommend to use a browser plugin e.g. Postman.
-
-This are a few sample OData-requests to retrieve data with HTTP-GET-method:
+Here are a few sample OData-requests to retrieve data with HTTP-GET-method:
 
 * http://localhost:3000/odata/$metadata
-* http://localhost:3000/odata/Sflight
-* http://localhost:3000/odata/Sflight?$top=3
-* http://localhost:3000/odata/Sflight?$top=2&$skip=3
-* http://localhost:3000/odata/Sflight?$select=firstname,age
-* http://localhost:3000/odata/Sflight?$count
+* http://localhost:3000/odata/Sflights
+* http://localhost:3000/odata/Sflights?$top=3
+* http://localhost:3000/odata/Sflights?$top=2&$skip=3
+* http://localhost:3000/odata/Sflights?$select=firstname,age
+* http://localhost:3000/odata/Sflights?$count
 
 ## Demo
-See a running demo op this app at https://calm-river-87255.herokuapp.com 
-or https://ui5app.kurmis.com
-(the free heroku dyno might take some time to start, so please be patient)
+See a running demo of this app at https://ui5app.kurmis.com
+(running on a the free heroku dyno, might take some time to start, so please be patient)
 
 ## Authentication and Authorization
+Data for Sflights is public for convinience.
+
+But it is possible to protect all data access with authentication and authorization.
+
 The n-odata-server leverages the authentication and authorization mechanisms 
 supplied by loopback. 
 
