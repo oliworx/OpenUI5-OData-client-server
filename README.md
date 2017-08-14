@@ -35,7 +35,7 @@ Here are a few sample OData-requests to retrieve data with HTTP-GET-method:
 * http://localhost:3000/odata/Sflights
 * http://localhost:3000/odata/Sflights?$top=3
 * http://localhost:3000/odata/Sflights?$top=2&$skip=3
-* http://localhost:3000/odata/Sflights?$select=firstname,age
+* http://localhost:3000/odata/Sflights?$select=FLDATE,PLANETYPE
 * http://localhost:3000/odata/Sflights?$count
 
 ## Demo
